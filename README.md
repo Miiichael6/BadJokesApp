@@ -5,12 +5,12 @@
 bad jokes is an app made by me ___Miiichael6___ its function is to show you a simple Joke
 
 ## "I want to prove it in my computer"
-its very ease, you only need to Download the zip and to do a simple
+it's very easy, you only need to download the zip and to do a simple
 
 ```
   - yarn install
 ```
--  then you will need to run the app, so now you will have to do an
+-  then you will need to run the app, so now you will have to do
 ```
   - yarn dev
 ```
