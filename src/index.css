@@ -1,5 +1,32 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+a {
+  border: 2px solid white;
+  border-radius: .5rem;
+  display: inline-block;
+  padding: .5rem;
+  text-decoration: none;
+  color: white;
+  transition: color .25s ease, border-color .50s ease;
+}
+
+a:hover {
+  border-color: burlywood;
+  color: burlywood;
 }
 
 body {

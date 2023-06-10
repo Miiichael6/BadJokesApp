@@ -3,7 +3,7 @@ import { getJokesThunk } from "../app/features/joke/jokesThunks";
 import Loader from "../components/Loader";
 import ButtonAnotherJoke from "../components/buttonAnotherJoke/ButtonAnotherJoke";
 import ShowMyJoke from "../components/ShowMyJoke/ShowMyJoke";
-import { Link } from "react-router-dom";
+import FoodPage from "../components/FoodPage/FoodPage";
 
 const Jokes = () => {
   const joke = useAppSelector((state) => state.jokes.joke);
@@ -24,9 +24,9 @@ const Jokes = () => {
       <ButtonAnotherJoke 
         id={joke.id} giveMeAnotherJoke={giveMeAnotherJoke} />
       </div>
-
-      <Link to={"/about"}>About this App</Link>
       </div>
+
+      <FoodPage />
     </div>
   );
 };
