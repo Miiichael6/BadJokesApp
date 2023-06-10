@@ -1,8 +1,9 @@
-// import { Link } from "react-router-dom";
-// import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../hooks/reduxHooks";
 import { getJokesThunk } from "../app/features/joke/jokesThunks";
 import Loader from "../components/Loader";
+import ButtonAnotherJoke from "../components/buttonAnotherJoke/ButtonAnotherJoke";
+import ShowMyJoke from "../components/ShowMyJoke/ShowMyJoke";
+import { Link } from "react-router-dom";
 
 const Jokes = () => {
   const joke = useAppSelector((state) => state.jokes.joke);
@@ -16,17 +17,16 @@ const Jokes = () => {
   return (
     <div>
       <div>
-        {loading ? (
-        <Loader />
-        ) : (
-          <h1>
-            {joke.joke ? joke.joke : <p>Push the button for a joke 😂</p>}
-          </h1>
-        )}
+      <div>
+        {loading ? <Loader /> : <ShowMyJoke joke={joke.joke} />}
       </div>
-      <button onClick={giveMeAnotherJoke}>
-        {joke.id ? "Another joke" : "tell me a joke"}
-      </button>
+      <div>
+      <ButtonAnotherJoke 
+        id={joke.id} giveMeAnotherJoke={giveMeAnotherJoke} />
+      </div>
+
+      <Link to={"/about"}>About this App</Link>
+      </div>
     </div>
   );
 };
