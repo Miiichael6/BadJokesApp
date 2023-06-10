@@ -3,7 +3,7 @@ import { getJokesThunk } from "../app/features/joke/jokesThunks";
 import Loader from "../components/Loader";
 import ButtonAnotherJoke from "../components/buttonAnotherJoke/ButtonAnotherJoke";
 import ShowMyJoke from "../components/ShowMyJoke/ShowMyJoke";
-import FoodPage from "../components/FoodPage/FoodPage";
+import FootPage from "../components/FootPage/FootPage";
 
 const Jokes = () => {
   const joke = useAppSelector((state) => state.jokes.joke);
@@ -26,7 +26,7 @@ const Jokes = () => {
       </div>
       </div>
 
-      <FoodPage />
+      <FootPage />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const FoodPage = () => {
+const FootPage = () => {
   return (
     <footer>
       <Link to={"/about"}>About this App</Link>
@@ -8,4 +8,4 @@ const FoodPage = () => {
   );
 };
 
-export default FoodPage;
+export default FootPage;
