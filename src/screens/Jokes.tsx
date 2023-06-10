@@ -1,3 +1,4 @@
+import scss from "../sass/modules/BadJokesPage.module.scss"
 import { useAppDispatch, useAppSelector } from "../hooks/reduxHooks";
 import { getJokesThunk } from "../app/features/joke/jokesThunks";
 import Loader from "../components/Loader";
@@ -15,17 +16,16 @@ const Jokes = () => {
   };
 
   return (
-    <div>
-      <div>
-      <div>
+    <div className={scss.bad_jokes_page}>
+      <div className={scss.bad_jokes_container}>
+      <div className={scss.bad_jokes_text_container}>
         {loading ? <Loader /> : <ShowMyJoke joke={joke.joke} />}
       </div>
-      <div>
+      <div className={scss.bad_jokes_button_container}>
       <ButtonAnotherJoke 
         id={joke.id} giveMeAnotherJoke={giveMeAnotherJoke} />
       </div>
       </div>
-
       <FootPage />
     </div>
   );

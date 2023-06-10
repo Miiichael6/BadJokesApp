@@ -1,9 +1,11 @@
+import scss from "../sass/modules/AboutBadJokes.module.scss"
 import {Link} from "react-router-dom"
 
 const About = () => {
   return (
-    <div>
-      <h1>About <u>BadJokes</u></h1>
+    <div className={scss.about_bad_jokes_page}>
+      <div className={scss.about_bad_jokes_container}>
+      <h1>About <span>BadJokes</span></h1>
       <p>
         This app was made using typescript, is just a little 
         <br />
@@ -15,7 +17,10 @@ const About = () => {
         <br />
         the jokes are too bad! , but maybe one make you laugh
       </p>
+      <div className={scss.back_to_bad_jokes_page}>
       <Link to={"/"}>back to Jokes</Link>
+      </div>
+      </div>
     </div>
   )
 }

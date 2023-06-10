@@ -1,3 +1,5 @@
+import scss from "./buttonAnotherJoke.module.scss"
+
 type Props = {
   id: string;
   giveMeAnotherJoke: () => void;
@@ -5,8 +7,8 @@ type Props = {
 
 const ButtonAnotherJoke = ({ id, giveMeAnotherJoke }: Props) => {
   return (
-    <button onClick={giveMeAnotherJoke}>
-      {id ? "Another joke" : "tell me a joke"}
+    <button onClick={giveMeAnotherJoke} className={scss.button}>
+      <b>{id ? "Another joke" : "tell me a joke"}</b>
     </button>
   );
 };

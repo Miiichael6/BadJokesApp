@@ -1,0 +1,17 @@
+.button {
+  background-color: rgb(230, 193, 10);
+  color: rgb(23, 28, 23);
+  border: none;
+  border-radius: .40rem;
+  padding: .75rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.25s;
+  user-select: none;
+
+  &:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em white;
+    transform: translateY(-0.25em);
+  }
+}
+

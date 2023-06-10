@@ -1,0 +1,27 @@
+.foot_page {
+  position: absolute;
+  width: 100%; 
+  padding: 1rem;
+  bottom: 0;
+  background-color: rgb(27, 26, 26);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  // justify-content: end;
+
+  p {
+    margin: auto;
+  // order: 2;
+  }
+
+
+  a {
+  // position: absolute;
+  margin-left: auto;
+  // order: 1;
+  // bottom: 1rem;
+  // right: 1rem;
+  }
+
+}
+
